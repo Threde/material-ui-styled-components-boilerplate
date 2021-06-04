@@ -3,22 +3,20 @@ import styled from "styled-components";
 
 
 import {H4, H5, H6, Subtitle1, Body1, Caption, Overline} from '../../base/typography'
-import {xlarge,large} from '../../base/sizes'
-import { black,primary, almond} from '../../base/colors'
+
 
 export interface TestComponentProps {
   theme: "primary" | "secondary";
 }
 
  const Div = styled.div<TestComponentProps>`
-   border: 2px solid ${black};
+   border: 2px solid black;
    text-align: center;
    width: 20%;
-   padding: ${large}px;
-   margin:${xlarge}px;
-   background-color:${primary}; //primary-color
+   padding: 16px;
+   background-color:blue; //primary-color
 
-   ${(props) => props.theme === 'secondary' && `background-color: ${almond};`}//secondary-color
+   ${(props) => props.theme === 'secondary' && `background-color: almond;`}//secondary-color
 `
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
