@@ -41,9 +41,6 @@ build/Release
 node_modules/
 jspm_packages/
 
-build/
-
-.DS_Store
 
 # TypeScript v1 declaration files
 typings/
@@ -106,3 +103,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+build/
+
+.DS_Store
