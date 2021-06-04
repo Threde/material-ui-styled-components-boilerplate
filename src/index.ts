@@ -1,5 +1,2 @@
-import TestComponent from "./atoms/TestComponent";
-import ButtonComponent from "./atoms/ButtonComponent"
-
-export { TestComponent, ButtonComponent };
- 
+export * as ButtonComponent from "./atoms/ButtonComponent";
+export * as TestComponent from "./atoms/TestComponent";
