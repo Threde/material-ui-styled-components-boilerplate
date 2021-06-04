@@ -1,8 +1,10 @@
 
-import TestComponent from "./atoms/TestComponent";
-import ButtonComponent from "./atoms/ButtonComponent"
+import TestComponent from "./atoms/TestComponent/TestComponent";
+import ButtonComponent from "./atoms/ButtonComponent/ButtonComponent"
 
-export { TestComponent, ButtonComponent };
+export { TestComponent, ButtonComponent};
+
+
 
 /* use in this way create NPM problems
 export * as ButtonComponent from "./atoms/ButtonComponent";

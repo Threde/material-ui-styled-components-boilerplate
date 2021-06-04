@@ -44,6 +44,10 @@ A boilerplate for building a custom internal themed material-ui module for inter
        margin:${xlarge}px;
        background-color:${primary}; //primary-color
 
-       ${(props) => props.theme === 'secondary' && `background-color: ${almond};`}//secondary-color
+       ${(props) => props.theme === 'secondary' && `background-color: ${almond};`} //secondary-color
 
    `
+
+   yarn generate NewComponent
+
+ 

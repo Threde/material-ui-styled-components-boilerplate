@@ -1,6 +1,5 @@
 const component = require("./component");
-const componentStories = require("./component.stories")
-
+const componentStories = require("./component.stories");
 
 
 module.exports = [

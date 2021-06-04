@@ -7,9 +7,16 @@ export default {
     title: "${componentName}"
 };
 
-export const WithBar = () => <${componentName} label="Hello" theme="primary"/>;
+export const Component1 = () => <${componentName} label="Hello i am ready to build" theme="primary"/>;
 
-export const WithBaz = () => <${componentName} label="Hello" theme="secondary"/>;
+export const Component2 = () => <${componentName} label="Hello i am secondary" theme="secondary"/>;
+
+// cut and paste this link in /src/index.ts
+import ${componentName} from "./atoms/${componentName}/${componentName}"
+
+
 `,
   extension: `.stories.tsx`
 });
+
+
