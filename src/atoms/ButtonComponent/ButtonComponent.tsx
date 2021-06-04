@@ -5,9 +5,9 @@ import styled from 'styled-components'
 const StyledButton = styled(Button)<ButtonComponentProps>`
       margin:16px;
       color:black;
-      background-color:blue; 
-      ${(props) => props.primary === false && `background-color:yellow;`} 
-      ${(props) => props.primary === true && `color:white;`}
+      background-color:blue!important; 
+      ${(props) => props.primary === false && `background-color:lightblue!important;`} 
+      ${(props) => props.primary === true && `color:white!important;`}
       
       ${(props) => props.size === 'large' && `padding: 16px;`}
       ${(props) => props.size === 'medium' && `padding: 12px;`}

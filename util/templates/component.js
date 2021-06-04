@@ -1,13 +1,29 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
+  content: `
 import React from "react";
+import styled from "styled-components";
 
-import { ${componentName}Props } from "./${componentName}.types";
 
-import "./${componentName}.scss";
+import { } from '../../base/sizes'
+import { } from '../../base/colors'
+import { } from '../../base/typography' 
 
-const ${componentName}: React.FC<${componentName}Props> = ({ foo }) => (
-    <div data-testid="${componentName}" className="foo-bar">{foo}</div>
+export interface ${componentName}Props {
+    label?: string;
+    theme: "primary" | "secondary";
+  };
+
+const Div = styled.div<${componentName}Props> 
+    border: 2px solid black;
+    background-color:lightblue; //primary-color
+    padding:20px;
+    $ {(props) => props.theme === 'secondary' && background-color: #888;} 
+   //erase space between $ {  and add tip back quotes between background-color: #888;
+   // add the respectives quotes to styled-components
+
+
+const ${componentName}: React.FC<${componentName}Props> = ({ label, theme}) => (
+    <Div theme={theme}>{label}</Div>
 );
 
 export default ${componentName};

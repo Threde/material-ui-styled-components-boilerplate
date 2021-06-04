@@ -16,7 +16,7 @@ export interface TestComponentProps {
    padding: 16px;
    background-color:blue; //primary-color
 
-   ${(props) => props.theme === 'secondary' && `background-color: almond;`}//secondary-color
+   ${(props) => props.theme === 'secondary' && `background-color: #888;`}//secondary-color
 `
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
