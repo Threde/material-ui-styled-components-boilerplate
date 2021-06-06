@@ -3,16 +3,38 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
 
    import {ButtonComponent, TestComponent} from 'a-react-mg'
-
+    
+    MATERIAL UI BUTTONS and STYLED-COMPONENTS PROPS:
     <TestComponent theme="secondary" />
 
-    <TestComponent />
-    
-
-    <ButtonComponent label='button' primary={true}/>
+    <ButtonComponent label='button' variants='primary'/>
     <ButtonComponent label='secondary' />
     <ButtonComponent label='large' size='large'/>
     <ButtonComponent label='small' size='small'/>
+
+   MATERIAL UI PROPS and STYLED-COMPONENTS:
+
+    <ButtonComponent label='disabled' disabled variants='primary'/>
+
+    <ButtonComponent label='outlined'
+                     variants='transparent' 
+                     variant= "outlined" 
+                     color='secondary' 
+    />
+
+    <ButtonComponent label='transparent' variants='transparent' color='primary'/>
+
+    <ButtonComponent label='elevation' label='Elevation' variant="contained"/>
+    
+
+      // we can use the MATERIAL UI props in our components:
+         disabled
+         disableElevation
+         variant="outlined"
+         variant="contained"
+         color="primary"  
+         color="secondary"
+
 
     Colors and sizies examples using to build boilerplate
 
@@ -49,13 +71,13 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
       `
 
-      // we can use the MATERIAL UI props un our compoents
-      disabled
-      disableElevation
-      variant="outlined"
-      variant="contained"
-      color="primary"  
-      color="secondary"
+      // we can use the MATERIAL UI props in our components:
+         disabled
+         disableElevation
+         variant="contained"
+         variant="outlined"
+         color="primary"  
+         color="secondary"
 
 
 
