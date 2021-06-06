@@ -11,11 +11,12 @@ export default {
   },
 } as Meta;
 
+
 const Template: Story<ButtonComponentProps> = (args) => <ButtonComponent {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  variants: 'primary',
   label: 'Button',
 };
 
@@ -34,4 +35,32 @@ export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  label: 'Disabled',
+  disabled:true
+};
+
+export const outlined = Template.bind({});
+outlined.args = {
+  variants:'transparent', //variants transparent using to can use MATERIAL UI props.
+  label: 'outlined',
+  variant: "outlined",  //variant from MATERIAL UI, variants from styled-components
+  color:'secondary'
+};
+
+export const transparent = Template.bind({});
+transparent.args = {
+  label: 'transparent',
+  variants:'transparent',
+  color:'primary'
+};
+
+
+export const ElevationEfect = Template.bind({});
+ElevationEfect.args = {
+  label: 'Elevation',
+  variant: "contained",
 };
