@@ -1,7 +1,10 @@
 # material-ui-styled-components-boilerplate
 A boilerplate for building a custom internal themed material-ui module for internal use following atomic design
-
-
+   
+   install:
+     yarn add a-react-mg
+   
+   usage example:
    import {ButtonComponent, TestComponent} from 'a-react-mg'
     
     MATERIAL UI BUTTONS and STYLED-COMPONENTS PROPS:
@@ -16,11 +19,7 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
     <ButtonComponent label='disabled' disabled variants='primary'/>
 
-    <ButtonComponent label='outlined'
-                     variants='transparent' 
-                     variant= "outlined" 
-                     color='secondary' 
-    />
+    <ButtonComponent label='outlined' variants='transparent' variant= "outlined" color='secondary'/>
 
     <ButtonComponent label='transparent' variants='transparent' color='primary'/>
 

@@ -14,8 +14,8 @@ type ButtonKinds = 'primary' | 'secondary' | 'transparent';
 type ButtonType = { background: string; hover: string; }; 
 
 const ButtonTypes: {[key in ButtonKinds]: ButtonType} = {
-          primary: {background: '#4d66d8',   hover: '#7280ce'},
-        secondary: {background: '#4db1eb',   hover: 'lightblue'},
+          primary: {background: '#4d66d8',   hover: '#4d66d8cc'},
+        secondary: {background: '#4db1eb',   hover: '#4db1ebc7'},
       transparent: {background: 'transparent', hover: 'transparent'}
 }  
 

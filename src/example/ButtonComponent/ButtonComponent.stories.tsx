@@ -43,9 +43,9 @@ Disabled.args = {
 
 export const outlined = Template.bind({});
 outlined.args = {
-  variants:'transparent', //variants transparent using to can be visible MATERIAL UI props.
+  variants:'transparent', 
   label: 'outlined',
-  variant: "outlined",  //variant from MATERIAL UI. variants from styled-components.
+  variant: "outlined", 
   color:'secondary'
 };
 
