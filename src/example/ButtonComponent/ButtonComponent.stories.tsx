@@ -4,11 +4,8 @@ import { Story, Meta } from '@storybook/react';
 import { ButtonComponent, ButtonComponentProps} from './ButtonComponent';
 
 export default {
-  title: 'Material UI Button',
-  component: ButtonComponent,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  title: 'example/Button',
+  component: ButtonComponent
 } as Meta;
 
 

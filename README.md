@@ -24,7 +24,7 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
     <ButtonComponent label='transparent' variants='transparent' color='primary'/>
 
-    <ButtonComponent label='elevation' label='Elevation' variant="contained"/>
+    <ButtonComponent label='elevation' variant="contained"/>
     
 
       // we can use the MATERIAL UI props in our components:

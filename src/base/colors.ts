@@ -1,6 +1,7 @@
 
 // Button Colors 
-/* import { ButtonKinds } from '../atoms/ButtonComponent/ButtonComponent';
+/* 
+export type ButtonKinds = 'primary' | 'secondary' | 'transparent';
 
 export type ButtonType = { background: string; hover: string; };
 
@@ -10,4 +11,4 @@ export const ButtonTypes: {[key in ButtonKinds]: ButtonType} = {
         secondary: {background: '#4db1eb',     hover: 'lightblue'},
       transparent: {background: 'transparent', hover: 'transparent'}
     
-} */
+}  */
