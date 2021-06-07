@@ -1,29 +1,35 @@
 # material-ui-styled-components-boilerplate
 A boilerplate for building a custom internal themed material-ui module for internal use following atomic design
    
-   install:
-     yarn add a-react-mg
+    install:
    
-   usage example:
-   import {ButtonComponent, TestComponent} from 'a-react-mg'
+    yarn add a-react-mg
+
+    usage example:
+
+    import {ButtonComponent, TestComponent} from 'a-react-mg'
     
     MATERIAL UI BUTTONS and STYLED-COMPONENTS PROPS:
+
     <TestComponent theme="secondary" />
 
-    <ButtonComponent label='button' variants='primary'/>
-    <ButtonComponent label='secondary' />
-    <ButtonComponent label='large' size='large'/>
-    <ButtonComponent label='small' size='small'/>
+    <ButtonComponent label='button' variants='primary'size="medium" />
+    <ButtonComponent label='secondary' size="medium" />
+    <ButtonComponent label='large' size='large' />
+    <ButtonComponent label='small' size='small' />
+    
+    <ButtonComponent label="outlined" size="medium" variants="outPrimary" />
+    <ButtonComponent label="outlined" size="medium" variants="outSecondary" />
 
-   MATERIAL UI PROPS and STYLED-COMPONENTS:
+    MATERIAL UI PROPS and STYLED-COMPONENTS:
 
-    <ButtonComponent label='disabled' disabled variants='primary'/>
+    <ButtonComponent label='disabled' disabled variants='primary' size="medium"/>
 
-    <ButtonComponent label='outlined' variants='transparent' variant= "outlined" color='secondary'/>
+    <ButtonComponent label='outlined' variants='transparent' variant= "outlined" color='secondary' size="medium"/>
 
-    <ButtonComponent label='transparent' variants='transparent' color='primary'/>
+    <ButtonComponent label='transparent' variants='transparent' color='primary' size="medium"/>
 
-    <ButtonComponent label='elevation' variant="contained"/>
+    <ButtonComponent label='elevation' variant="contained" size="medium"/>
      
    
    # usage typography:
@@ -80,8 +86,6 @@ A boilerplate for building a custom internal themed material-ui module for inter
                    `background-color: ${almond};`} //secondary-color
 
       `
-
-
 
 
 

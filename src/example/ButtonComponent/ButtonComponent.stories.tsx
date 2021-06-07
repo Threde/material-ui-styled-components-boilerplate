@@ -15,12 +15,13 @@ export const Primary = Template.bind({});
 Primary.args = {
   variants: 'primary',
   label: 'Button',
+  size: 'medium'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  variants: 'secondary',
   label: 'Button',
+  size: 'medium'
 };
 
 export const Large = Template.bind({});
@@ -34,11 +35,24 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+export const outlinedPrimary = Template.bind({});
+outlinedPrimary.args = {
+  variants: 'outPrimary',
+  label: 'outlined',
+  size: 'medium'
+};
+export const outlinedSecondary = Template.bind({});
+outlinedSecondary.args = {
+  variants: 'outSecondary',
+  label: 'outlined',
+  size: 'medium'
+};
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   label: 'Disabled',
-  disabled:true
+  disabled: true,
+  size: 'medium'
 };
 
 export const outlined = Template.bind({});
@@ -46,14 +60,16 @@ outlined.args = {
   variants:'transparent', 
   label: 'outlined',
   variant: "outlined", 
-  color:'secondary'
+  color:'secondary',
+  size: 'medium'
 };
 
 export const transparent = Template.bind({});
 transparent.args = {
   label: 'transparent',
   variants:'transparent',
-  color:'primary'
+  color:'primary',
+  size: 'medium'
 };
 
 
@@ -61,4 +77,6 @@ export const ElevationEfect = Template.bind({});
 ElevationEfect.args = {
   label: 'Elevation',
   variant: "contained",
+  size: 'medium'
 };
+
