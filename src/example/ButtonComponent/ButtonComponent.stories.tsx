@@ -14,7 +14,7 @@ const Template: Story<ButtonComponentProps> = (args) => <ButtonComponent {...arg
 export const Primary = Template.bind({});
 Primary.args = {
   variants: 'primary',
-  label: 'Button',
+  label: 'button',
   size: 'medium'
 };
 
@@ -38,12 +38,14 @@ Small.args = {
 export const outlinedPrimary = Template.bind({});
 outlinedPrimary.args = {
   variants: 'outPrimary',
+  variant: "outlined",
   label: 'outlined',
   size: 'medium'
 };
 export const outlinedSecondary = Template.bind({});
 outlinedSecondary.args = {
   variants: 'outSecondary',
+  variant: "outlined",
   label: 'outlined',
   size: 'medium'
 };

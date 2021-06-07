@@ -7,10 +7,11 @@ export interface TestComponentProps {
 }
 
 const Div = styled.div<TestComponentProps>`
+   width:90%;
    border: 2px solid black;
    padding-left: 20px;
    background-color:lightblue; //primary-color
-
+ 
    ${(props) => props.theme === 'secondary' && `background-color: #b2d3cb;`}//secondary-color
 `
 

@@ -38,7 +38,7 @@ const StyledButton = styled(Button)<ButtonComponentProps>`
                background-color:${(props) => ButtonTypes[props.variants].background}!important; 
       &:hover {background-color:${(props) => ButtonTypes[props.variants].hover}!important};
 
-       padding: 5px ${(props) => spacing[props.size]}px!important; 
+       padding: 5px ${(props) => spacing[props.size]}px; 
          
 `
 
