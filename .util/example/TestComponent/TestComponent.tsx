@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {H1,H2,H3,H4, H5, H6, Subtitle1,Subtitle2,Body1,Body2,Caption, Overline} from '../../base/typography'
+import {H1,H2,H3,H4, H5, H6, Subtitle1,Subtitle2,Body1,Body2,Caption, Overline} from '../../../src/base/typography'
 
 export interface TestComponentProps {
   theme: "primary" | "secondary";

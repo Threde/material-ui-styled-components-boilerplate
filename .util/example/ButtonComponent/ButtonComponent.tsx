@@ -1,16 +1,11 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';  
 import styled from 'styled-components'
-/* import {ButtonTypes,ButtonKinds} from '../../base/colors' 
-import {spacing, ButtonSizes} from '../../base/sizes'  */
 
 type ButtonSizes = 'large' | 'medium' |'small';
-
 const spacing: { [key in ButtonSizes]: number } = { large: 40, medium: 20, small: 12 } 
 
-
 type ButtonKinds = 'primary' | 'secondary' | 'outPrimary' | 'outSecondary' | 'disabled' | 'link' ;
-
 type ButtonType = { background: string; hover: string; colors: string; }; 
 
 const ButtonTypes: {[key in ButtonKinds]: ButtonType } = {
@@ -43,7 +38,7 @@ const StyledButton = styled(Button)<ButtonComponentProps>`
         background-color:${(props) => ButtonTypes[props.variants].hover}!important;
       }
       
-      ${(props) => props.size === 'small' && `padding:2px 6px!important;font-weight:normal!important`}
+      ${(props) => props.size === 'small' && `padding:2px 6px!important;font-weight:normal!important;`}
       ${(props) => props.variants === 'link' && `text-decoration:underline!important;`}
       ${(props) => props.variants === 'disabled' && `cursor:not-allowed!important;`}
       ${(props) => props.variants === 'outPrimary' && `box-shadow:inset 0 0 0 1.2px #4d66d8;`}
@@ -52,7 +47,7 @@ const StyledButton = styled(Button)<ButtonComponentProps>`
 
 export const ButtonComponent: React.FC<ButtonComponentProps> = (props) => {
   
-  const { variants = 'secondary', size = 'medium', label } = props
+  const { variants = 'secondary', size = 'medium', label = 'button' } = props
 
   return (
     <StyledButton variants={variants} size={size} {...props}>
