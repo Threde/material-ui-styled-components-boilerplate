@@ -11,7 +11,7 @@ const spacing: { [key in ButtonSizes]: number } = { large: 40, medium: 20, small
 
 type ButtonKinds = 'primary' | 'secondary' | 'outPrimary' | 'outSecondary' | 'disabled' | 'link' ;
 
-type ButtonType = { background: string; hover: string;colors: string }; 
+type ButtonType = { background: string; hover: string; colors: string; }; 
 
 const ButtonTypes: {[key in ButtonKinds]: ButtonType } = {
           primary: {background: '#4d66d8', colors: '#fff',    hover: '#4d66d8cc',},
@@ -34,7 +34,7 @@ const StyledButton = styled(Button)<ButtonComponentProps>`
       margin:8px!important;
       font-size: 14px!important;
 
-      padding: 7px ${(props) => spacing[props.size]}px!important; 
+      padding: 6px ${(props) => spacing[props.size]}px!important; 
       color:${(props) => ButtonTypes[props.variants].colors}!important;
 
       background-color:${(props) => ButtonTypes[props.variants].background}!important; 
@@ -43,7 +43,7 @@ const StyledButton = styled(Button)<ButtonComponentProps>`
         background-color:${(props) => ButtonTypes[props.variants].hover}!important;
       }
       
-      ${(props) => props.size === 'small' && `padding:2px 6px!important;`}
+      ${(props) => props.size === 'small' && `padding:2px 6px!important;font-weight:normal!important`}
       ${(props) => props.variants === 'link' && `text-decoration:underline!important;`}
       ${(props) => props.variants === 'disabled' && `cursor:not-allowed!important;`}
       ${(props) => props.variants === 'outPrimary' && `box-shadow:inset 0 0 0 1.2px #4d66d8;`}
