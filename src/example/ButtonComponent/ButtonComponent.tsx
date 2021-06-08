@@ -14,12 +14,12 @@ type ButtonKinds = 'primary' | 'secondary' | 'outPrimary' | 'outSecondary' | 'di
 type ButtonType = { background: string; hover: string; colors: string; }; 
 
 const ButtonTypes: {[key in ButtonKinds]: ButtonType } = {
-          primary: {background: '#4d66d8', colors: '#fff',    hover: '#4d66d8cc',},
+          primary: {background: '#4d66d8', colors: '#fff',    hover: '#4d66d8cc',}, 
         secondary: {background: '#4db1eb', colors: '#444',    hover: '#4db1ebc7',},
-       outPrimary: {background: 'none',    colors: '#4d66d8', hover: 'rgba(77,102,216,.12)'},
-     outSecondary: {background: 'none',    colors: '#4db1eb', hover: 'rgba(77,177,235,.12)'},
+       outPrimary: {background: 'none',      colors: '#4d66d8', hover: 'rgba(77,102,216,.12)'},
+     outSecondary: {background: 'none',      colors: '#4db1eb', hover: 'rgba(77,177,235,.12)'},
          disabled: {background: '#d3d3d3', colors: '#808080', hover: 'none'},
-             link: {background: 'none',    colors: '#4d66d8', hover: 'none'}
+             link: {background: 'none',      colors: '#4d66d8', hover: 'none'}
 }
 
 export interface ButtonComponentProps {
