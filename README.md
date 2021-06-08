@@ -85,6 +85,6 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
 
 <p>
-    <img src="relativePath/../src/example/ButtonComponent/code.png" width="220" height="240" />
+    <img src="relativePath/../src/example/ButtonComponent/code.png"/>
 </p>
  
