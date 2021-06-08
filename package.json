@@ -1,6 +1,6 @@
 {
   "name": "a-react-mg",
-  "version": "1.0.14",
+  "version": "1.0.18",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [

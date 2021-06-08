@@ -13,15 +13,15 @@ const Template: Story<ButtonComponentProps> = (args) => <ButtonComponent {...arg
 
 export const Primary = Template.bind({});
 Primary.args = {
+  size: 'medium',
   variants: 'primary',
   label: 'button',
-  size: 'medium'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  size: 'medium',
   label: 'Button',
-  size: 'medium'
 };
 
 export const Large = Template.bind({});
@@ -37,48 +37,31 @@ Small.args = {
 };
 export const outlinedPrimary = Template.bind({});
 outlinedPrimary.args = {
+  size: 'medium',
   variants: 'outPrimary',
-  variant: "outlined",
-  label: 'outlined',
-  size: 'medium'
+  label: 'button'
 };
 export const outlinedSecondary = Template.bind({});
 outlinedSecondary.args = {
+  size: 'medium',
   variants: 'outSecondary',
-  variant: "outlined",
-  label: 'outlined',
-  size: 'medium'
+  label: 'button'
 };
-
+export const Link = Template.bind({});
+Link.args = {
+  size: 'medium',
+  variants: 'link',
+  label: 'button'
+};
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: 'Disabled',
-  disabled: true,
-  size: 'medium'
-};
-
-export const outlined = Template.bind({});
-outlined.args = {
-  variants:'transparent', 
-  label: 'outlined',
-  variant: "outlined", 
-  color:'secondary',
-  size: 'medium'
-};
-
-export const transparent = Template.bind({});
-transparent.args = {
-  label: 'transparent',
-  variants:'transparent',
-  color:'primary',
-  size: 'medium'
+  size: 'medium',
+  variants: 'disabled',
+  label: 'button',
+  disabled:true
 };
 
 
-export const ElevationEfect = Template.bind({});
-ElevationEfect.args = {
-  label: 'Elevation',
-  variant: "contained",
-  size: 'medium'
-};
+
+
 

@@ -13,24 +13,19 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
     <TestComponent theme="secondary" />
 
-    <ButtonComponent label='button' variants='primary' size="medium" />
-    <ButtonComponent label='secondary' size="medium" />
+    MATERIAL UI BUTTONS and STYLED-COMPONENTS PROPS:
+    <br/>
+    <ButtonComponent label='primary' variants='primary' />
+    <ButtonComponent label='secondary' />
 
     <ButtonComponent label='large' size='large' />
     <ButtonComponent label='small' size='small' />
 
-    <ButtonComponent label="outlined" variant="outlined" variants="outPrimary" />
-    <ButtonComponent label="outlined" variant="outlined" variants="outSecondary" />
+    <ButtonComponent label="outlined" variants="outPrimary" />
+    <ButtonComponent label="outlined" variants="outSecondary" />
 
-    MATERIAL UI PROPS and STYLED-COMPONENTS:
-
-    <ButtonComponent label='disabled' disabled variants='primary' size="medium"/>
-
-    <ButtonComponent label='outlined' variants='transparent' variant="outlined" color='secondary' />
-
-    <ButtonComponent label='transparent' variants='transparent' color='primary' size="medium"/>
-
-    <ButtonComponent label='elevation' variant="contained" />
+    <ButtonComponent label='disabled' variants='disabled' disabled/>
+    <ButtonComponent label='link' variants='link' />
      
    
    # usage typography:
