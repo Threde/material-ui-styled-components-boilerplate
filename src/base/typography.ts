@@ -12,13 +12,13 @@ export const H3 = styled(Typography)`
 
 `;
 export const H4 = styled(Typography)`
-    margin-bottom: 10px!important;
+  
 `;
 export const H5 = styled(Typography)`
-     color:green;
+     
 `;
 export const H6 = styled(Typography)`
-     color:red;
+
 `;
 export const Subtitle1 = styled(Typography)`
   
@@ -27,7 +27,7 @@ export const Subtitle2 = styled(Typography)`
      
 `;
 export const Body1 = styled(Typography)`
-    color:lightblue;
+  
 `;
 export const Body2 = styled(Typography)`
   

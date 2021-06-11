@@ -1,12 +1,22 @@
-# material-ui-styled-components-boilerplate
-A boilerplate for building a custom internal themed material-ui module for internal use following atomic design
-   
-    install:
-   
-    yarn add a-react-mg
- 
-   # usage typography:
+import React from "react";
+import styled from "styled-components";
+import {H1,H2,H3,H4, H5, H6, Subtitle1,Subtitle2,Body1,Body2,Caption, Overline} from '../../../src/base/typography'
 
+export interface TestComponentProps {
+  theme: "primary" | "secondary";
+}
+
+const Div = styled.div<TestComponentProps>`
+   width:90%;
+   border: 2px solid black;
+   padding-left: 20px;
+   background-color:lightblue; //primary-color
+ 
+   ${(props) => props.theme === 'secondary' && `background-color: #b2d3cb;`}//secondary-color
+`
+
+const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
+  <Div theme={theme}>
     <H1 variant='h1'> h1. Heading</H1>
     <H2 variant='h2'> h2. Heading</H2>
     <H3 variant='h3'> h3. Heading</H3>
@@ -24,5 +34,7 @@ A boilerplate for building a custom internal themed material-ui module for inter
 
     <Overline variant="overline">i am a overline text Materia UI</Overline>
 
+  </Div>
+);
 
-  
+export default TestComponent;

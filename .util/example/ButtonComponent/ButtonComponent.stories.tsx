@@ -4,11 +4,8 @@ import { Story, Meta } from '@storybook/react';
 import { ButtonComponent, ButtonComponentProps} from './ButtonComponent';
 
 export default {
-  title: 'Material UI Button',
-  component: ButtonComponent,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  title: 'example/Button',
+  component: ButtonComponent
 } as Meta;
 
 
@@ -16,12 +13,14 @@ const Template: Story<ButtonComponentProps> = (args) => <ButtonComponent {...arg
 
 export const Primary = Template.bind({});
 Primary.args = {
+  size: 'medium',
   variants: 'primary',
-  label: 'Button',
+  label: 'button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  size: 'medium',
   label: 'Button',
 };
 
@@ -36,31 +35,33 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
-
+export const outlinedPrimary = Template.bind({});
+outlinedPrimary.args = {
+  size: 'medium',
+  variants: 'outPrimary',
+  label: 'button'
+};
+export const outlinedSecondary = Template.bind({});
+outlinedSecondary.args = {
+  size: 'medium',
+  variants: 'outSecondary',
+  label: 'button'
+};
+export const Link = Template.bind({});
+Link.args = {
+  size: 'medium',
+  variants: 'link',
+  label: 'button'
+};
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: 'Disabled',
+  size: 'medium',
+  variants: 'disabled',
+  label: 'button',
   disabled:true
 };
 
-export const outlined = Template.bind({});
-outlined.args = {
-  variants:'transparent', //variants transparent using to can be visible MATERIAL UI props.
-  label: 'outlined',
-  variant: "outlined",  //variant from MATERIAL UI. variants from styled-components.
-  color:'secondary'
-};
-
-export const transparent = Template.bind({});
-transparent.args = {
-  label: 'transparent',
-  variants:'transparent',
-  color:'primary'
-};
 
 
-export const ElevationEfect = Template.bind({});
-ElevationEfect.args = {
-  label: 'Elevation',
-  variant: "contained",
-};
+
+
